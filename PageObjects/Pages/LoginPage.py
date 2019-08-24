@@ -21,3 +21,4 @@ class LoginPageLocators(object):
     USERNAME = (By.ID, 'username')
     PASSWORD = (By.ID, 'password')
     LOG_IN   = (By.ID, 'loginbtn')
+

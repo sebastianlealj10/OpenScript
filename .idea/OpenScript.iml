@@ -120,6 +120,7 @@
       <sourceFolder url="file://$MODULE_DIR$/venv/lib64/python3.7/site-packages/urllib3/util" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/lib64/python3.7/site-packages/urllib3-1.25.3.dist-info" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PageObjects/Pages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Base" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (OpenScript)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -398,3 +398,17 @@ console.log: Accessibility service init or shutdown observer does not exist.
 1565219803959	Marionette	INFO	Listening on port 40313
 1565219804021	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.log: Accessibility service init or shutdown observer does not exist.
+1566610968577	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AABkjbG4z3px"
+1566610969598	Marionette	INFO	Listening on port 37095
+1566610969682	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: Accessibility service init or shutdown observer does not exist.
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 7779: TypeError: Y.config.doc.defaultView is null
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1566612212824	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TtiBT9TAyKmZ"
+1566612213863	Marionette	INFO	Listening on port 42511
+1566612213931	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: Accessibility service init or shutdown observer does not exist.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

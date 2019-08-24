@@ -13,12 +13,25 @@ from LoginPage import Login
 from CoursePage import Course
 
 
+class SeleniumWrapper:
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(SeleniumWrapper, cls).__new__(cls, *args, **kwargs)
+        return cls._instance
+
+    def connect(self):
+        self.driver = webdriver.Chrome()
+        return self.driver
+
+
 class TestChangeCovers(unittest.TestCase):
     Start_course = 20
 
     def setUp(self):
         # create a new Firefox session
-        self.driver = webdriver.Firefox()
+        self.driver = SeleniumWrapper.connect(self)
         self.driver.implicitly_wait(30)
         self.driver.get('https://snap2perf-sandbox.mrooms.net/course/view.php?id=' + str(self.Start_course))
 
