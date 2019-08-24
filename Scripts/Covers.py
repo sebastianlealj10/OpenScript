@@ -13,16 +13,22 @@ from LoginPage import Login
 from CoursePage import Course
 
 
-class SeleniumWrapper:
-    _instance = None
+def singleton(*args):
+    instances = dict()
 
-    def __new__(cls, *args, **kwargs):
-        if not cls._instance:
-            cls._instance = super(SeleniumWrapper, cls).__new__(cls, *args, **kwargs)
-        return cls._instance
+    def get_instance():
+        if args[0] not in instances:
+            instances[args[0]] = args[0]()
+        return instances[args[0]]
 
+    return get_instance
+
+
+@singleton
+class Driver:
+    @staticmethod
     def connect(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Firefox()
         return self.driver
 
 
@@ -31,7 +37,8 @@ class TestChangeCovers(unittest.TestCase):
 
     def setUp(self):
         # create a new Firefox session
-        self.driver = SeleniumWrapper.connect(self)
+        self.driver = Driver()
+        self.driver.connect(self)
         self.driver.implicitly_wait(30)
         self.driver.get('https://snap2perf-sandbox.mrooms.net/course/view.php?id=' + str(self.Start_course))
 
