@@ -11,9 +11,10 @@ sys.path.extend(['/home/sebas/PycharmProjects/OpenScript', '/home/sebas/PycharmP
 
 from LoginPage import Login
 from CoursePage import Course
+from ActivitiesModal import ActivityModal
 
 
-class TestChangeCovers(unittest.TestCase):
+class GenerateData(unittest.TestCase):
     Start_course = 20
 
     def setUp(self):
@@ -36,13 +37,21 @@ class TestChangeCovers(unittest.TestCase):
                 pass
             course_number += 1
 
+    def test_createActivities(self):
+        login_page = Login(self.driver)
+        login_page.login_form()
+        Course(self.driver).create_activity()
+        ActivityModal(self.driver).choose_activity()
+
+    """
     def tearDown(self):
         # close the browser window
         self.driver.quit()
+    """
 
 
 if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestChangeCovers)
-    # suite = unittest.TestSuite()
-    # suite.addTest(ChangeCovers('changeCover'))
+    # suite = unittest.TestLoader().loadTestsFromTestCase(GenerateData.test_createActivities())
+    suite = unittest.TestSuite()
+    suite.addTest(GenerateData('test_createActivities'))
     unittest.TextTestRunner(verbosity=2).run(suite)
