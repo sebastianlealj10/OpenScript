@@ -19,9 +19,13 @@ class Course(object):
         element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY)
         element.click()
 
+    def load_toc(self):
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(PageLocators.SAVE_BUTTON))
+
 
 class PageLocators(object):
     CHANGE_COVER_IMAGE = (By.ID, 'snap-coverfiles')
     SAVE_BUTTON = (By.CSS_SELECTOR, '.btn-success')
     ALERT_IMAGE = (By.ID, 'snap-alert-cover-image-size')
     CREATE_ACTIVITY = (By.CSS_SELECTOR, 'a[data-target="#snap-modchooser-modal"]')
+    LOAD_TOC = (By.ID, 'course-toc')

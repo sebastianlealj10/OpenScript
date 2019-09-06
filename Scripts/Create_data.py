@@ -12,10 +12,12 @@ sys.path.extend(['/home/sebas/PycharmProjects/OpenScript', '/home/sebas/PycharmP
 from LoginPage import Login
 from CoursePage import Course
 from ActivitiesModal import ActivityModal
+from AssignmentPage import AssignmentForm
 
 
 class GenerateData(unittest.TestCase):
-    Start_course = 20
+    Start_course = 60
+    Number_of_activities = 2
 
     def setUp(self):
         # create a new Firefox session
@@ -37,11 +39,22 @@ class GenerateData(unittest.TestCase):
                 pass
             course_number += 1
 
-    def test_createActivities(self):
+    def test_createAssignments(self):
         login_page = Login(self.driver)
         login_page.login_form()
-        Course(self.driver).create_activity()
-        ActivityModal(self.driver).choose_activity()
+        course_number = self.Start_course
+        number_of_activities = self.Number_of_activities
+        for x in range(0, 300):
+            self.driver.get('https://snap2perf-sandbox.mrooms.net/course/view.php?id=' + str(course_number))
+            try:
+                for y in range(0, number_of_activities):
+                    Course(self.driver).create_activity()
+                    ActivityModal(self.driver).choose_activity()
+                    AssignmentForm(self.driver).fill_form(y)
+            except Exception as e:
+                print("Course number" + str(course_number) + "failed".format(e))
+                pass
+            course_number += 1
 
     """
     def tearDown(self):
