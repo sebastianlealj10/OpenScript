@@ -15,56 +15,46 @@ from ActivitiesModal import ActivityModal
 from AssignmentPage import AssignmentForm
 
 
-class GenerateData(unittest.TestCase):
-    Start_course = 60
+class GenerateActivities:
     Number_of_activities = 2
 
-    def setUp(self):
-        # create a new Firefox session
+    def __init__(self):
         self.driver = webdriver.Firefox()
+
+    def setup(self, url):
+        # create a new Firefox session
         self.driver.implicitly_wait(30)
-        self.driver.get('https://snap2perf-sandbox.mrooms.net/course/view.php?id=' + str(self.Start_course))
+        self.driver.get(url)
 
-    def test_changeCovers(self):
-        login_page = Login(self.driver)
-        login_page.login_form()
-        Course(self.driver).change_cover()
-        course_number = self.Start_course
-        for x in range(0, 300):
-            self.driver.get('https://snap2perf-sandbox.mrooms.net/course/view.php?id=' + str(course_number))
-            try:
-                Course(self.driver).change_cover()
-            except Exception as e:
-                print("Course number" + str(course_number) + "failed".format(e))
-                pass
-            course_number += 1
-
-    def test_createAssignments(self):
-        login_page = Login(self.driver)
-        login_page.login_form()
-        course_number = self.Start_course
-        number_of_activities = self.Number_of_activities
-        for x in range(0, 300):
-            self.driver.get('https://snap2perf-sandbox.mrooms.net/course/view.php?id=' + str(course_number))
-            try:
-                for y in range(0, number_of_activities):
-                    Course(self.driver).create_activity()
-                    ActivityModal(self.driver).choose_activity()
-                    AssignmentForm(self.driver).fill_form(y)
-            except Exception as e:
-                print("Course number" + str(course_number) + "failed".format(e))
-                pass
-            course_number += 1
-
-    """
-    def tearDown(self):
+    def teardown(self):
         # close the browser window
         self.driver.quit()
-    """
+
+    def covers(self, url):
+        login_page = Login(self.driver)
+        login_page.login_form()
+        self.driver.get(url)
+        try:
+            Course(self.driver).change_cover()
+        except Exception as e:
+            print(url + "failed".format(e))
+            pass
+
+    def assignments(self, url):
+        number_of_activities = self.Number_of_activities
+        self.driver.get(url)
+        try:
+            for y in range(0, number_of_activities):
+                Course(self.driver).create_activity()
+                ActivityModal(self.driver).choose_activity()
+                AssignmentForm(self.driver).fill_form(y)
+        except Exception as e:
+            print(url + "failed".format(e))
+            pass
 
 
 if __name__ == "__main__":
-    # suite = unittest.TestLoader().loadTestsFromTestCase(GenerateData.test_createActivities())
-    suite = unittest.TestSuite()
-    suite.addTest(GenerateData('test_createActivities'))
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    navigate = GenerateActivities()
+    navigate.setup('https://snap2perf-sandbox.mrooms.net/course/view.php?id=20')
+    navigate.covers('https://snap2perf-sandbox.mrooms.net/course/view.php?id=20')
+    navigate.assignments('https://snap2perf-sandbox.mrooms.net/course/view.php?id=20')
