@@ -7,6 +7,8 @@ class Login(object):
         self.driver = driver
 
     def login_form(self):
+        element = self.driver.find_element(*PageLocators.SNAP_BUTTON)
+        element.click()
         element = self.driver.find_element(*PageLocators.USERNAME)
         element.clear()
         element.send_keys("sebas.admin")
@@ -18,6 +20,7 @@ class Login(object):
 
 
 class PageLocators(object):
-    USERNAME = (By.ID, 'username')
-    PASSWORD = (By.ID, 'password')
-    LOG_IN   = (By.ID, 'loginbtn')
+    SNAP_BUTTON = (By.CSS_SELECTOR, '.snap-login-button')
+    USERNAME    = (By.ID, 'username')
+    PASSWORD    = (By.ID, 'password')
+    LOG_IN      = (By.CSS_SELECTOR, '.btn-block')

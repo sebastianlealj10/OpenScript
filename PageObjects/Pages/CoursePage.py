@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class Course(object):
@@ -17,6 +18,9 @@ class Course(object):
 
     def create_activity(self):
         element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY)
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
         element.click()
 
     def load_toc(self):

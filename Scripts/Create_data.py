@@ -13,6 +13,7 @@ from LoginPage import Login
 from CoursePage import Course
 from ActivitiesModal import ActivityModal
 from AssignmentPage import AssignmentForm
+from Dictionary import Courses
 
 
 class GenerateActivities:
@@ -25,36 +26,47 @@ class GenerateActivities:
         # create a new Firefox session
         self.driver.implicitly_wait(30)
         self.driver.get(url)
+        self.driver.maximize_window()
+        login_page = Login(self.driver)
+        login_page.login_form()
 
     def teardown(self):
         # close the browser window
         self.driver.quit()
 
     def covers(self, url):
-        login_page = Login(self.driver)
-        login_page.login_form()
+
         self.driver.get(url)
         try:
             Course(self.driver).change_cover()
         except Exception as e:
-            print(url + "failed".format(e))
+            print(url + ": " + str(e))
             pass
 
-    def assignments(self, url):
-        number_of_activities = self.Number_of_activities
+    def assignments(self, url, number):
+
         self.driver.get(url)
         try:
-            for y in range(0, number_of_activities):
+            for y in range(0, number):
                 Course(self.driver).create_activity()
                 ActivityModal(self.driver).choose_activity()
-                AssignmentForm(self.driver).fill_form(y)
+                AssignmentForm(self.driver).fill_form(number)
         except Exception as e:
-            print(url + "failed".format(e))
+            print(url + ": " + str(e))
             pass
 
 
 if __name__ == "__main__":
+
     navigate = GenerateActivities()
-    navigate.setup('https://snap2perf-sandbox.mrooms.net/course/view.php?id=20')
-    navigate.covers('https://snap2perf-sandbox.mrooms.net/course/view.php?id=20')
-    navigate.assignments('https://snap2perf-sandbox.mrooms.net/course/view.php?id=20')
+    navigate.setup('https://snap2perf-sandbox.mrooms.net')
+    for i, j in Courses["URL"].items():
+        k = Courses["URL"][i]["Actions"]["cover"]
+        l = int(''.join(k))
+        m = Courses["URL"][i]["Actions"]["assignment"]
+        o = int(''.join(m))
+        if l > 0:
+            navigate.covers(i)
+        if o > 0:
+            navigate.assignments(i, o)
+    navigate.teardown()
