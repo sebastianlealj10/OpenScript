@@ -17,16 +17,14 @@ from Dictionary import Courses
 
 
 class GenerateActivities:
-    Number_of_activities = 2
 
     def __init__(self):
         self.driver = webdriver.Firefox()
 
     def setup(self, url):
         # create a new Firefox session
-        self.driver.implicitly_wait(30)
+        self.driver.implicitly_wait(10)
         self.driver.get(url)
-        self.driver.maximize_window()
         login_page = Login(self.driver)
         login_page.login_form()
 
@@ -43,14 +41,26 @@ class GenerateActivities:
             print(url + ": " + str(e))
             pass
 
-    def assignments(self, url, number):
+    def assignments(self, url, section, number):
 
-        self.driver.get(url)
+        self.driver.get(url+'#section-' + str(section))
         try:
-            for y in range(0, number):
+            for i in range(0, number):
+                Course(self.driver).create_activity(section)
+                ActivityModal(self.driver).create_assignment()
+                AssignmentForm(self.driver).fill_form(i+1)
+        except Exception as e:
+            print(e)
+            pass
+
+    def labels(self, url, section, number):
+
+        self.driver.get(url+'#section-' + str(section))
+        try:
+            for _ in range(0, number):
                 Course(self.driver).create_activity()
-                ActivityModal(self.driver).choose_activity()
-                AssignmentForm(self.driver).fill_form(number)
+                ActivityModal(self.driver).create_label()
+                # AssignmentForm(self.driver).fill_form(number)
         except Exception as e:
             print(url + ": " + str(e))
             pass
@@ -60,13 +70,19 @@ if __name__ == "__main__":
 
     navigate = GenerateActivities()
     navigate.setup('https://snap2perf-sandbox.mrooms.net')
-    for i, j in Courses["URL"].items():
-        k = Courses["URL"][i]["Actions"]["cover"]
-        l = int(''.join(k))
-        m = Courses["URL"][i]["Actions"]["assignment"]
-        o = int(''.join(m))
-        if l > 0:
+    for i, j in Courses.items():
+        k = Courses[i]["cover"]
+        k = int(''.join(k))
+        if k > 0:
             navigate.covers(i)
-        if o > 0:
-            navigate.assignments(i, o)
+        for x, y in Courses[i]["Section"].items():
+            p = Courses[i]["Section"][x]["Actions"]["assignment"]
+            p = int(''.join(p))
+            if p > 0:
+                navigate.assignments(i, x, p)
+            q = Courses[i]["Section"][x]["Actions"]["label"]
+            q = int(''.join(q))
+            if q > 0:
+                navigate.labels(i, x, p)
+
     navigate.teardown()

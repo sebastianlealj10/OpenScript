@@ -16,12 +16,14 @@ class Course(object):
         element.click()
         WebDriverWait(self.driver, 20).until((EC.visibility_of_element_located(PageLocators.ALERT_IMAGE)))
 
-    def create_activity(self):
-        element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY)
-        self.driver.execute_script("arguments[0].scrollIntoView();", element)
-        actions = ActionChains(self.driver)
-        actions.move_to_element(element).perform()
-        element.click()
+    def create_activity(self, section):
+        print(section)
+        if int(section) == 0:
+            element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY_SECTION0)
+            element.click()
+        if int(section) == 1:
+            element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY_SECTION1)
+            element.click()
 
     def load_toc(self):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(PageLocators.SAVE_BUTTON))
@@ -31,5 +33,6 @@ class PageLocators(object):
     CHANGE_COVER_IMAGE = (By.ID, 'snap-coverfiles')
     SAVE_BUTTON = (By.CSS_SELECTOR, '.btn-success')
     ALERT_IMAGE = (By.ID, 'snap-alert-cover-image-size')
-    CREATE_ACTIVITY = (By.CSS_SELECTOR, 'a[data-target="#snap-modchooser-modal"]')
+    CREATE_ACTIVITY_SECTION0 = (By.CSS_SELECTOR, 'a[data-target="#snap-modchooser-modal"][data-section="0"]')
+    CREATE_ACTIVITY_SECTION1 = (By.CSS_SELECTOR, 'a[data-target="#snap-modchooser-modal"][data-section="1"]')
     LOAD_TOC = (By.ID, 'course-toc')

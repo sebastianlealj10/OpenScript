@@ -130,7 +130,7 @@
       <sourceFolder url="file://$MODULE_DIR$/venv/lib64/python3.7/site-packages/wait-0.0.3-py3.7.egg-info" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (venv)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7 (venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
