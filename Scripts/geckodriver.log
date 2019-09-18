@@ -4067,3 +4067,352 @@ http://requirejs.org/docs/errors.html#scripterror
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1568842244490	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3k/lsjsyfzd6t739gk_pq8f0s3rf_g677/T/rust_mozprofile.rOozREQLAjkV"
+2019-09-18 16:30:45.855 plugin-container[14547:202747] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:30:45.998 plugin-container[14548:202775] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d2f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:30:46.044 plugin-container[14547:202747] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x147b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:30:46.059 plugin-container[14547:202747] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10d7b10d0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:30:46.061 plugin-container[14547:202758] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+2019-09-18 16:30:46.091 plugin-container[14548:202775] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x127b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:30:46.105 plugin-container[14548:202775] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x115347100 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:30:46.108 plugin-container[14548:202781] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842246254	Marionette	INFO	Listening on port 65094
+1568842246331	Marionette	WARN	TLS certificate errors will be ignored for this session
+1568842246366	Marionette	DEBUG	[4294967297] Frame script loaded
+1568842246367	Marionette	DEBUG	[4294967297] Frame script registered
+1568842246391	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2019-09-18 16:30:46.772 plugin-container[14549:202883] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x883b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:30:46.851 plugin-container[14549:202883] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa3b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:30:46.859 plugin-container[14549:202883] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x1105e7c40 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:30:46.861 plugin-container[14549:202884] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842252299	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1568842253769	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842256274	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842263483	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3k/lsjsyfzd6t739gk_pq8f0s3rf_g677/T/rust_mozprofile.Ya7jR2InfXfQ"
+2019-09-18 16:31:04.809 plugin-container[14565:203193] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:31:04.902 plugin-container[14565:203193] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x1403, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:31:04.917 plugin-container[14565:203193] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10b640e50 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:31:04.919 plugin-container[14565:203194] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+2019-09-18 16:31:04.953 plugin-container[14566:203219] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x752f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:31:05.039 plugin-container[14566:203219] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x137b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:31:05.054 plugin-container[14566:203219] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10d44b100 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:31:05.056 plugin-container[14566:203233] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842265206	Marionette	INFO	Listening on port 65280
+1568842265242	Marionette	WARN	TLS certificate errors will be ignored for this session
+1568842265276	Marionette	DEBUG	[4294967297] Frame script loaded
+1568842265278	Marionette	DEBUG	[4294967297] Frame script registered
+1568842265294	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2019-09-18 16:31:05.731 plugin-container[14567:203331] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8b3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:31:05.811 plugin-container[14567:203331] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa77, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:31:05.821 plugin-container[14567:203331] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x1123e7ca0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:31:05.823 plugin-container[14567:203340] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842266318	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1568842268925	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842275832	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842276098	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842276242	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/
+1568842277240	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/
+1568842277241	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/
+1568842277461	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842279021	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842279031	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/
+1568842279805	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/
+1568842279807	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/
+1568842280082	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842281752	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842282002	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842282086	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842282944	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842282945	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842283226	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842284902	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842285324	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842285510	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842287157	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842287157	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842287426	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842288077	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842288099	Marionette	DEBUG	[4294967297] Received DOM event popstate for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842288492	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842288562	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842289564	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842289567	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842289794	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842290284	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842290791	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842291007	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842292923	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842292927	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842293354	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842293939	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842293964	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842295167	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842295169	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842295466	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842296711	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842297030	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842297103	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842297903	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842297905	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842298133	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842298731	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842299308	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842299501	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842301285	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842301286	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842301506	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842301993	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842302005	Marionette	DEBUG	[4294967297] Received DOM event popstate for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842302357	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842302427	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842303329	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842303331	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842303545	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842304059	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842304542	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842304761	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842306877	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842306878	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842307118	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842307857	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842307862	Marionette	INFO	Stopped listening on port 65280
+JavaScript error: https://snap2perf-sandbox.mrooms.net/lib/javascript.php/1567538676/lib/requirejs/require.js, line 41: Error: Script error for "theme_snap/course_conditionals-lazy"
+http://requirejs.org/docs/errors.html#scripterror
+1568842482392	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3k/lsjsyfzd6t739gk_pq8f0s3rf_g677/T/rust_mozprofile.zkCYgq7iPHIT"
+2019-09-18 16:34:43.719 plugin-container[14693:204636] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x843b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:34:43.815 plugin-container[14693:204636] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb3f, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:34:43.830 plugin-container[14693:204636] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x11533fdc0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:34:43.832 plugin-container[14693:204675] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+2019-09-18 16:34:43.852 plugin-container[14694:204732] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x853b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:34:43.938 plugin-container[14694:204732] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb7b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:34:43.954 plugin-container[14694:204732] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10e146100 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:34:43.956 plugin-container[14694:204747] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842484101	Marionette	INFO	Listening on port 49306
+1568842484136	Marionette	WARN	TLS certificate errors will be ignored for this session
+1568842484170	Marionette	DEBUG	[4294967297] Frame script loaded
+1568842484171	Marionette	DEBUG	[4294967297] Frame script registered
+1568842484190	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2019-09-18 16:34:44.629 plugin-container[14695:204844] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7507, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:34:44.711 plugin-container[14695:204844] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x97b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:34:44.719 plugin-container[14695:204844] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10cfe7c40 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:34:44.721 plugin-container[14695:204846] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842485190	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1568842486293	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842497414	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842497676	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842497812	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/
+1568842498896	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/
+1568842498896	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/
+1568842499111	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842500060	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842500074	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/
+1568842501157	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/
+1568842501159	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/
+1568842501483	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842503299	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842503554	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842503623	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842504543	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842504545	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842504814	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842506059	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842506459	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842506659	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842508119	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842508120	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842508330	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842508828	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842508850	Marionette	DEBUG	[4294967297] Received DOM event popstate for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842509190	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842509253	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842510654	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842510655	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842510884	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842511403	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842511981	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842512198	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842513713	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842513714	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842514000	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842514519	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842514533	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842515718	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842515720	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842515933	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842517149	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842517422	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842517492	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842518476	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842518478	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842518705	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842519196	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842519691	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842519938	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842521547	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842521548	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842521764	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842522245	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842522256	Marionette	DEBUG	[4294967297] Received DOM event popstate for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842522610	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842522671	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842523531	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842523532	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842523759	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842524278	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842524779	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842525008	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842526667	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842526668	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842526885	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842527408	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842527413	Marionette	INFO	Stopped listening on port 49306
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1568842857835	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3k/lsjsyfzd6t739gk_pq8f0s3rf_g677/T/rust_mozprofile.NF1aMiVHLnPV"
+2019-09-18 16:40:59.155 plugin-container[14902:207162] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:40:59.246 plugin-container[14902:207162] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa7b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:40:59.257 plugin-container[14902:207162] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10cf2fb80 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:40:59.259 plugin-container[14902:207164] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+2019-09-18 16:40:59.290 plugin-container[14903:207190] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7337, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:40:59.381 plugin-container[14903:207190] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x147b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:40:59.397 plugin-container[14903:207190] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10dae1e80 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:40:59.399 plugin-container[14903:207273] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842859530	Marionette	INFO	Listening on port 49768
+1568842859590	Marionette	WARN	TLS certificate errors will be ignored for this session
+1568842859623	Marionette	DEBUG	[4294967297] Frame script loaded
+1568842859624	Marionette	DEBUG	[4294967297] Frame script registered
+1568842859636	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2019-09-18 16:41:00.075 plugin-container[14904:207306] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:41:00.157 plugin-container[14904:207306] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x133b, name = 'com.apple.coredrag'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2019-09-18 16:41:00.165 plugin-container[14904:207306] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x115fe7c40 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-09-18 16:41:00.167 plugin-container[14904:207307] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1568842860619	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1568842862394	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842872401	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842872684	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842872872	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/
+1568842873843	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/
+1568842873844	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/
+1568842874053	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/
+1568842874541	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/
+1568842874548	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/
+1568842875593	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/
+1568842875595	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/
+1568842876011	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842877714	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842877965	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842878027	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842878802	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842878805	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842879054	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842880178	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842880597	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842880793	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842882431	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842882432	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=1&return=0&sr=
+1568842882655	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842883137	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-1
+1568842883179	Marionette	DEBUG	[4294967297] Received DOM event popstate for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842883568	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842883625	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842884519	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842884521	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842884743	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842885237	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842885807	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842886034	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842887688	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842887690	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=21&section=0&return=0&sr=
+1568842887901	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842888408	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842888416	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842889515	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842889518	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=21#section-0
+1568842889740	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842890253	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842890562	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842890631	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842891456	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842891458	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842891888	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842892397	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842892839	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842893023	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842894576	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842894577	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=1&return=0&sr=
+1568842894804	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842895243	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-1
+1568842895280	Marionette	DEBUG	[4294967297] Received DOM event popstate for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842895624	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842895688	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842896603	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842896608	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842896832	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842897421	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842897970	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1568842898169	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+JavaScript error: https://snap2perf-sandbox.mrooms.net/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js, line 1425: Error: Invalid JSON string:
+
+1568842899879	Marionette	DEBUG	[4294967297] Received DOM event pagehide for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842899889	Marionette	DEBUG	[4294967297] Received DOM event unload for https://snap2perf-sandbox.mrooms.net/course/modedit.php?add=assign&type=&course=20&section=0&return=0&sr=
+1568842900175	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842900649	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://snap2perf-sandbox.mrooms.net/course/view.php?id=20#section-0
+1568842900653	Marionette	INFO	Stopped listening on port 49768
+JavaScript error: https://snap2perf-sandbox.mrooms.net/lib/javascript.php/1567538676/lib/requirejs/require.js, line 41: Error: Script error for "theme_snap/course_conditionals-lazy"
+http://requirejs.org/docs/errors.html#scripterror

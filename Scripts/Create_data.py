@@ -23,7 +23,6 @@ class GenerateActivities:
 
     def setup(self, url):
         # create a new Firefox session
-        self.driver.implicitly_wait(10)
         self.driver.get(url)
         login_page = Login(self.driver)
         login_page.login_form()
@@ -71,18 +70,15 @@ if __name__ == "__main__":
     navigate = GenerateActivities()
     navigate.setup('https://snap2perf-sandbox.mrooms.net')
     for i, j in Courses.items():
-        k = Courses[i]["cover"]
-        k = int(''.join(k))
-        if k > 0:
+        covers = int(''.join(Courses[i]["cover"]))
+        if covers > 0:
             navigate.covers(i)
         for x, y in Courses[i]["Section"].items():
-            p = Courses[i]["Section"][x]["Actions"]["assignment"]
-            p = int(''.join(p))
-            if p > 0:
-                navigate.assignments(i, x, p)
-            q = Courses[i]["Section"][x]["Actions"]["label"]
-            q = int(''.join(q))
-            if q > 0:
-                navigate.labels(i, x, p)
+            assignments = int(''.join(Courses[i]["Section"][x]["Actions"]["assignment"]))
+            if assignments > 0:
+                navigate.assignments(i, x, assignments)
+            labels = int(''.join(Courses[i]["Section"][x]["Actions"]["label"]))
+            if labels > 0:
+                navigate.labels(i, x, labels)
 
     navigate.teardown()
