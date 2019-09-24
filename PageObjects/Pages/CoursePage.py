@@ -9,6 +9,10 @@ class Course(object):
     def __init__(self, driver):
         self.driver = driver
 
+    def get_course(self, url, section):
+        self.driver.get(url + '#section-' + str(section))
+        self.load_toc()
+
     def change_cover(self):
         element = self.driver.find_element(*PageLocators.CHANGE_COVER_IMAGE)
         element.send_keys('/home/sebas/Documents/cover.jpg')
@@ -18,15 +22,12 @@ class Course(object):
 
     def create_activity(self, section):
         print(section)
-        if int(section) == 0:
-            element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY_SECTION0)
-            element.click()
-        if int(section) == 1:
-            element = self.driver.find_element(*PageLocators.CREATE_ACTIVITY_SECTION1)
-            element.click()
+        element = self.driver.find_element_by_css_selector \
+            ('a[data-target="#snap-modchooser-modal"][data-section="' + section + '"]')
+        element.click()
 
     def load_toc(self):
-        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(PageLocators.SAVE_BUTTON))
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(PageLocators.LOAD_TOC))
 
 
 class PageLocators(object):

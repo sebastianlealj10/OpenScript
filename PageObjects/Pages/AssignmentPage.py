@@ -15,18 +15,19 @@ class AssignmentForm(object):
 
     def fill_assignment_name(self, name):
         element = self.driver.find_element(*PageLocators.ASSIGNMENT_NAME)
-        element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(PageLocators.ASSIGNMENT_NAME))
+        element = WebDriverWait(self.driver, 10).\
+            until(EC.element_to_be_clickable(PageLocators.ASSIGNMENT_NAME))
         element.clear()
         element.send_keys(name)
 
     def due_date_disable(self):
-        element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(PageLocators.DISABLE_DUE_DATE))
-        element = self.driver.find_element(*PageLocators.DISABLE_DUE_DATE)
+        element = WebDriverWait(self.driver, 10).\
+            until(EC.element_to_be_clickable(PageLocators.DISABLE_DUE_DATE))
         element.click()
 
     def save_and_return(self):
-        element = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(PageLocators.SAFE_AND_RETURN_TO_COURSE))
-        element = self.driver.find_element(*PageLocators.SAFE_AND_RETURN_TO_COURSE)
+        element = WebDriverWait(self.driver, 10).\
+            until(EC.element_to_be_clickable(PageLocators.SAFE_AND_RETURN_TO_COURSE))
         element.click()
 
     def fill_description(self):

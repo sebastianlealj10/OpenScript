@@ -1,6 +1,4 @@
 import sys
-import time
-import unittest
 
 from selenium import webdriver
 
@@ -13,6 +11,7 @@ from LoginPage import Login
 from CoursePage import Course
 from ActivitiesModal import ActivityModal
 from AssignmentPage import AssignmentForm
+from LabelPage import LabelForm
 from Dictionary import Courses
 
 
@@ -32,7 +31,6 @@ class GenerateActivities:
         self.driver.quit()
 
     def covers(self, url):
-
         self.driver.get(url)
         try:
             Course(self.driver).change_cover()
@@ -41,25 +39,24 @@ class GenerateActivities:
             pass
 
     def assignments(self, url, section, number):
-
-        self.driver.get(url+'#section-' + str(section))
+        Course(self.driver).get_course(url, section)
         try:
             for i in range(0, number):
                 Course(self.driver).create_activity(section)
                 ActivityModal(self.driver).create_assignment()
-                AssignmentForm(self.driver).fill_form(i+1)
+                AssignmentForm(self.driver).fill_form(i + 1)
         except Exception as e:
             print(e)
             pass
 
     def labels(self, url, section, number):
-
-        self.driver.get(url+'#section-' + str(section))
+        Course(self.driver).get_course(url, section)
         try:
             for _ in range(0, number):
-                Course(self.driver).create_activity()
+                print(url)
+                Course(self.driver).create_activity(section)
                 ActivityModal(self.driver).create_label()
-                # AssignmentForm(self.driver).fill_form(number)
+                LabelForm(self.driver).create_label_image()
         except Exception as e:
             print(url + ": " + str(e))
             pass
@@ -81,4 +78,4 @@ if __name__ == "__main__":
             if labels > 0:
                 navigate.labels(i, x, labels)
 
-    navigate.teardown()
+    # navigate.teardown()

@@ -5,15 +5,15 @@ Courses = {
             "0": {
                 'Actions':
                     {
-                        'assignment': {"1"},
+                        'assignment': {"0"},
                         'label': {"0"}
                     }
             },
             "1": {
                 'Actions':
                     {
-                        'assignment': {"1"},
-                        'label': {"0"}
+                        'assignment': {"0"},
+                        'label': {"1"}
                     }
             }
         }
@@ -24,15 +24,15 @@ Courses = {
             "0": {
                 'Actions':
                     {
-                        'assignment': {"1"},
+                        'assignment': {"0"},
                         'label': {"0"}
                     }
             },
             "1": {
                 'Actions':
                     {
-                        'assignment': {"1"},
-                        'label': {"0"}
+                        'assignment': {"0"},
+                        'label': {"1"}
                     }
             }
         }
