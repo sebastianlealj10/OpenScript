@@ -1,4 +1,5 @@
 import sys
+import time
 
 from selenium import webdriver
 
@@ -12,6 +13,9 @@ from CoursePage import Course
 from ActivitiesModal import ActivityModal
 from AssignmentPage import AssignmentForm
 from LabelPage import LabelForm
+from OpenforumPage import OpenforumForm
+from QuizPage import  QuizForm
+from AttendancePage import AttendanceForm
 from Dictionary import Courses
 
 
@@ -38,8 +42,15 @@ class GenerateActivities:
             print(url + ": " + str(e))
             pass
 
-    def assignments(self, url, section, number):
-        Course(self.driver).get_course(url, section)
+    def get_course(self, url, section):
+        try:
+            Course(self.driver).get_course(url, section)
+            print(url + " : " + section)
+        except Exception as e:
+            print(url + ": " + str(e))
+            pass
+
+    def assignments(self, section, number):
         try:
             for i in range(0, number):
                 Course(self.driver).create_activity(section)
@@ -49,16 +60,44 @@ class GenerateActivities:
             print(e)
             pass
 
-    def labels(self, url, section, number):
-        Course(self.driver).get_course(url, section)
+    def labels(self, section, number):
         try:
             for _ in range(0, number):
-                print(url)
                 Course(self.driver).create_activity(section)
                 ActivityModal(self.driver).create_label()
                 LabelForm(self.driver).create_label_image()
         except Exception as e:
-            print(url + ": " + str(e))
+            print(e)
+            pass
+
+    def open_forum(self, section, number):
+        try:
+            for i in range(0, number):
+                Course(self.driver).create_activity(section)
+                ActivityModal(self.driver).create_open_forum()
+                OpenforumForm(self.driver).fill_form(i + 1)
+        except Exception as e:
+            print(e)
+            pass
+
+    def quiz(self, section, number):
+        try:
+            for i in range(0, number):
+                Course(self.driver).create_activity(section)
+                ActivityModal(self.driver).create_quiz()
+                QuizForm(self.driver).fill_form(i + 1)
+        except Exception as e:
+            print(e)
+            pass
+
+    def attendance(self, section, number):
+        try:
+            for i in range(0, number):
+                Course(self.driver).create_activity(section)
+                ActivityModal(self.driver).create_attendance()
+                AttendanceForm(self.driver).fill_form(i + 1)
+        except Exception as e:
+            print(e)
             pass
 
 
@@ -71,11 +110,21 @@ if __name__ == "__main__":
         if covers > 0:
             navigate.covers(i)
         for x, y in Courses[i]["Section"].items():
+            navigate.get_course(i, x)
             assignments = int(''.join(Courses[i]["Section"][x]["Actions"]["assignment"]))
-            if assignments > 0:
-                navigate.assignments(i, x, assignments)
             labels = int(''.join(Courses[i]["Section"][x]["Actions"]["label"]))
+            open_forum = int(''.join(Courses[i]["Section"][x]["Actions"]["open_forum"]))
+            quiz = int(''.join(Courses[i]["Section"][x]["Actions"]["quiz"]))
+            attendance = int(''.join(Courses[i]["Section"][x]["Actions"]["attendance"]))
+            if assignments > 0:
+                navigate.assignments(x, assignments)
             if labels > 0:
-                navigate.labels(i, x, labels)
+                navigate.labels(x, labels)
+            if open_forum > 0:
+                navigate.open_forum(x, open_forum)
+            if quiz > 0:
+                navigate.quiz(x, quiz)
+            if attendance > 0:
+                navigate.attendance(x, attendance)
 
     # navigate.teardown()

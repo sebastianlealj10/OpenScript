@@ -14,7 +14,6 @@ class AssignmentForm(object):
         self.save_and_return()
 
     def fill_assignment_name(self, name):
-        element = self.driver.find_element(*PageLocators.ASSIGNMENT_NAME)
         element = WebDriverWait(self.driver, 10).\
             until(EC.element_to_be_clickable(PageLocators.ASSIGNMENT_NAME))
         element.clear()

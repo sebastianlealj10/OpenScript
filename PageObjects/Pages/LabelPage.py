@@ -32,7 +32,7 @@ class LabelForm(object):
         element = WebDriverWait(self.driver, 10). \
             until(EC.element_to_be_clickable(PageLocators.CHOOSE_FILE_BUTTON))
         element.clear()
-        element.send_keys('/Users/jleal/Documents/image.jpg')
+        element.send_keys('/home/sebas/Documents/image.jpg')
 
     def upload_file(self):
         element = WebDriverWait(self.driver, 10). \
@@ -41,7 +41,7 @@ class LabelForm(object):
 
     def overwrite_file(self):
         try:
-            element = WebDriverWait(self.driver, 2). \
+            element = WebDriverWait(self.driver, 4). \
                 until(EC.element_to_be_clickable(PageLocators.OVERWRITE_BUTTON))
             element.click()
         except:
